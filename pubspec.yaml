@@ -1,0 +1,10 @@
+name: brot
+description: Brot construction page
+dependencies:
+  browser: any
+  sass: any
+  script_inliner: any
+transformers:
+  - sass:
+      compass: true
+  - script_inliner
