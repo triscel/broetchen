@@ -1,0 +1,59 @@
+@import "compass";
+
+
+
+$width: 1000px;
+$height: 790px;
+
+#logo {
+  z-index: 1000;
+  display: block;
+  width: 400px;
+
+  @include transition(all ease-out 0.5s);
+
+  @include transform(translateY(30px));
+  opacity: 0;
+
+  &.visible {
+    @include transform(translateY(0px));
+    opacity: 1;
+  }
+}
+
+#slideshow {
+
+  @media (max-width: ($width - 1px)) {
+
+    position: relative;
+
+    img.clip {
+      max-width: 100%;
+    }
+
+    #logo {
+      margin: 40px auto;
+      max-width: 100%;
+    }
+  }
+  @media (min-width: ($width)) {
+    width: $width;
+    height: $height;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -$width/2;
+    margin-top: -$height/2;
+
+    #logo {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      margin-left: -200px;
+      width: 400px;
+      height: 151px;
+    }
+  }
+}
+
+

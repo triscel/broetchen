@@ -44,6 +44,9 @@ Future preloadImage(int index) {
 queueNextImage(int index) {
   if (index >= imageCount) {
     slideshowContainer.querySelector('#logo').classes.add('visible');
+    new Timer(new Duration(seconds: 2), () {
+      window.location.assign('http://shop.broetchengreisslerei.at');
+    });
     return;
   }
 

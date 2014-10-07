@@ -1449,12 +1449,16 @@ z=J.wK(y)
 return z.gFV(z)},
 Y0:function(a){var z
 if(a>=$.Zg){J.pP($.lZ.querySelector("#logo")).h(0,"visible")
+P.rT(P.xC(0,0,0,0,0,2),new S.y9())
 return}z=S.pv(a)
-P.rT(P.xC(0,0,0,0,0,1),new S.y9(a,z))},
+P.rT(P.xC(0,0,0,0,0,1),new S.Oi(a,z))},
 em:{
 "^":"Tp:8;",
 $1:function(a){return S.Y0(1)}},
 y9:{
+"^":"Tp:6;",
+$0:function(){window.location.assign("http://shop.broetchengreisslerei.at")}},
+Oi:{
 "^":"Tp:6;a,b",
 $0:function(){this.b.ml(new S.C5(this.a))}},
 C5:{
@@ -2744,6 +2748,10 @@ pA:{
 Mi:{
 "^":"qE;LA:src}",
 "%":"HTMLInputElement"},
+u8:{
+"^":"Gv;",
+bu:function(a){return a.toString()},
+"%":"Location"},
 El:{
 "^":"qE;kc:error=,LA:src}",
 "%":"HTMLAudioElement|HTMLMediaElement|HTMLVideoElement"},
